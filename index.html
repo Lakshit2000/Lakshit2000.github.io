@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> BAKE AND WAKE</title>
+<link rel="icon" type="image/png" href="mainlogo.png">
+<link rel="stylesheet" href="bakestye.css">
+<link rel="stylesheet" href="js.css">    
+</head>
+<body>
+   <div style="position: sticky;top: 0;z-index: 1;background: url(background.jpg);
+   background-repeat: no-repeat;
+   background-size:cover ;
+   background-attachment: fixed;">
+     <table id="header">
+        <tr>
+            <td colspan="3">
+                <div style="margin-left: 20px;">
+                    <a href="#"><img src="mainlogo.png" height="100px" width="300px"></a>
+                </div>
+            </td>
+            <td style="border:2px 2px  #262626; padding:5px 5px 5px 5px;float: right;margin: 30px;" colspan="1">
+                    <div style="margin:5px auto 2px auto;text-decoration:none;">
+                                    <a href="#" target="_blank" title="Facebook">
+                                      <img src="facebook.gif" width="22px" height="22px"  alt="facebook" style="border-radius: 4px;">
+                                    </a>&nbsp;&nbsp;
+                                    <a href="#" target="_blank" title="Twitter">
+                                      <img src="twitter.gif" width="22px" height="22px" alt="twitter"style="border-radius: 4px;">
+                                    </a>&nbsp;&nbsp;
+                                    <a href="#" target="_blank" title="Instagram">
+                                      <img src="instagram.gif" width="22px" height="22px" alt="Instagram"style="border-radius: 4px;">
+                                    </a>&nbsp;&nbsp;
+                                  </div>
+            </td>
+
+        </tr>
+    </table>
+    <ul id="menu">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">EXPLORE</a>
+            <ul>
+                <li>
+                    <a href="#">BREADS</a>
+                    <ul>
+                        <li><a href="#">WHEAT BREADS</a></li>
+                        <li><a href="#">MULTI-GRAIN BREADS</a></li>
+                        <li><a href="#">GLUTEN FREE BREADS</a></li>
+                        <li><a href="#">PITA BREADS</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">CAKES</a>
+                    <ul>
+                        <li><a href="#">POUND CAKES</a></li>
+                        <li><a href="#">RED VALVET CAKES</a></li>
+                        <li><a href="#">SPONGE CAKES</a></li>
+                        <li><a href="#">GENOISE CAKES</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">COOKIES</a>
+                    <ul>
+                        <li><a href="#">OAT MEAL COOKIES</a></li>
+                        <li><a href="#">CHOCOLATE CHIPS COOKIES</a></li>
+                        <li><a href="#">PEANUT BUTTER COOKIES</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">DONUTS</a>
+                    <ul>
+                        <li><a href="#">CHOCOLATE FROSTED</a></li>
+                        <li><a href="#"> CRULLER</a></li>
+                        <li><a href="#">STRAWBERRY FROSTED</a></li>
+                        <li><a href="#">BLUEBERRY </a></li>
+                        <li><a href="#">JELLY</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">other</a>
+                    <ul>
+                        <li><a href="#">BAGELS</a></li>
+                        <li><a href="#">PIES</a></li>
+                        <li><a href="#">PASTRIES</a></li>
+                        <li><a href="#">CHOCOLATES</a></li>
+                        <li><a href="#">CUSTARDS</a></li>
+                    </ul>
+                </li>
+            </ul>            
+        </li>
+        <li><a href="#">SNACKS</a>
+            <ul>
+                <li>
+                    <a href="#">PIZZAS</a></li>
+                    <li><a href="#">SANDWICHES</a></li>
+                    <li><a href="#">PASTAS</a></li>
+                    <li><a href="#">NODDLES</a></li>
+                    <li><a href="#">CONTINENTAL</a></li>
+                    <li><a href="#">INDIAN SNACKS</a></li>
+            </ul>
+        </li>
+        <li><a href="#">BEVERAGES</a>
+            <ul>
+                <li><a href="#">COFFEE</a></li>
+                <li><a href="#">TEA</a></li>
+                <li><a href="#">JUICES</a></li>
+                <li><a href="#">MOCKTAILS</a></li>
+                <li><a href="#">SODAS</a></li>
+                <li><a href="#">ENERGY DRINKS</a>
+                </li>
+            </ul>
+        </li>
+      </ul>
+      <hr>
+    </div>
+     
+      <div class="slideshow-container" >
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="good.jpg" style="width:100%" height="600px">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="BREAD.jpg" style="width:100%" height="600px">
+          
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="pizza.jpg" style="width:100%" height="600px">
+          
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="BAKERY.jpg" style="width:100%" height="600px">
+            
+          </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display="flex";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 3500); // Change image every 2 seconds
+            }
+            </script>
+                <div class="middlecard">
+                    <p>BAKERY</p>
+                    <p>BAKE AND WAKE</p>
+                    <img src="BAKERY.jpg" width="100%" height="500px"><br>
+                    <p style="text-align: center;color: rgba(8, 0, 7, 0.979);font-size: 20px;">
+                    Freshly Baked Goodness You Can’t Resist<br>
+                    At BAKE AND WAKE, the top-rated bakery in JAIPUR, you’ll find the tastiest baked goods served fresh daily.<br>
+                    From warm and fluffy to decadent and dreamy, we’ve got the recipe for a truly sweet day.<br>
+                    We see the smiles that our treats bring to everyone who visits.<br>
+                    Isn’t it time you stopped by?
+                    <font style="font-size: 40px;"><b>...</b></font>
+                    </p>
+
+                </div>
+
+                <p id="att">ABOUT US</p> 
+                <div class="row">
+                    <div class="leftcolumn">
+                        <div class="card">
+                            <img src="ABOUT US.jpg" width="100%">
+                            <h2>INFORMATION</h2>
+                            <p style="float: left;font-size: 20px;">
+                               ABOUT US<br>
+                              BAKE AND WAKE has been a top rated bakery in JAIPUR since 2000. When customers walk into our bakery,
+                              they’re immediately greeted by an overwhelmingly delicious smell of freshly baked treats that no one can resist!
+                              We’re a neighborhood shop, and we love being a home away from home for the community.
+                             All of our goods are handcrafted, baked and served with a side of love. Stop by to taste them for yourself.
+                            </p>
+                        </div>
+                        
+                    </div>
+                   
+                </div>    
+                 
+    <div class="footer">
+        Contact us<br>
+        Email:bakeandwake@gmail.com<br>
+        Phone:1800-236-900<br>
+        For more updates:Follow us on<br> 
+        <a href="#"><img src="facebook.gif" alt="facebook" style="border-radius: 5px;"> </a>
+        <a href="#"><img src="instagram.gif" alt="instagram"style="border-radius: 5px;"> </a>
+        <a href="#"><img src="twitter.gif" alt="twitter"style="border-radius: 5px;"></a><br><br><br><br>
+    </div> 
+</body>
+</html>
